@@ -1,0 +1,12 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 2024.01.24
+_src_path: gh:scientific-python/cookie
+backend: skbuild
+email: msclock@126.com
+full_name: msclock
+license: Apache
+org: msclock
+project_name: pysmooth7zip
+project_short_description: A wrapper based on 7zip.
+url: https://github.com/msclock/pysmooth7zip
+vcs: true
