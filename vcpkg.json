@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "pysmooth7zip",
+  "description": "A smooth wrapper for 7zip.",
+  "builtin-baseline": "80403036a665cb8fcc1a1b3e17593d20b03b2489",
+  "dependencies": ["pybind11", "7zip", "cmake-modules", "robotology-cmake-ycm"],
+  "overrides": [
+    {
+      "name": "pybind11",
+      "version": "2.11.1"
+    },
+    {
+      "name": "7zip",
+      "version-string": "23.01",
+      "port-version": 2
+    },
+    {
+      "name": "cmake-modules",
+      "version": "1.3.0"
+    },
+    {
+      "name": "robotology-cmake-ycm",
+      "version": "0.16.2"
+    }
+  ],
+  "vcpkg-configuration": {
+    "registries": [
+      {
+        "kind": "git",
+        "baseline": "b58077c46126bee7c5cd54c26a4b974055c21d2b",
+        "repository": "https://github.com/msclock/cmake-registry",
+        "packages": [
+          "cmake-modules",
+          "robotology-cmake-ycm",
+          "vcpkg-cmake-module"
+        ]
+      }
+    ]
+  }
+}
