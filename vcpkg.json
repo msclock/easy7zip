@@ -1,0 +1,57 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "pysmooth7zip",
+  "description": "A wrapper based on 7zip.",
+  "builtin-baseline": "4b6c50d962cc20aaa3ef457f8ba683b586263cfb",
+  "homepage": "https://github.com/msclock/pysmooth7zip",
+  "dependencies": [
+    "pybind11",
+    "cmake-modules",
+    "robotology-cmake-ycm"
+  ],
+  "overrides": [
+    {
+      "name": "pybind11",
+      "version": "2.13.5"
+    },
+    {
+      "name": "cmake-modules",
+      "version": "1.6.11"
+    },
+    {
+      "name": "robotology-cmake-ycm",
+      "version": "0.16.3"
+    }
+  ],
+  "features": {
+    "test": {
+      "description": "Dependencies for testing",
+      "dependencies": [
+        {
+          "name": "gtest",
+          "version>=": "1.14.0"
+        }
+      ]
+    }
+  },
+  "vcpkg-configuration": {
+    "registries": [
+      {
+        "kind": "git",
+        "baseline": "e5e9b32228141212c78eace81718ca9894055b7b",
+        "repository": "https://github.com/msclock/cmake-registry",
+        "packages": [
+          "cmake-modules",
+          "robotology-cmake-ycm",
+          "vcpkg-cmake-module"
+        ]
+      }
+    ],
+    "overlay-ports": [
+      "cmake/vcpkg/ports"
+    ],
+    "overlay-triplets": [
+      "cmake/vcpkg/triplets"
+    ]
+  }
+}
